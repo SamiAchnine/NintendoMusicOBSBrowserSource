@@ -62,7 +62,7 @@ if (document.querySelector("#themeselect")) {
         let selectedTheme = event.target.value;
         let stylesheets = document.querySelectorAll("link[rel='stylesheet']");
         if (stylesheets.length > ssNum && selectedTheme === "Basic White"){
-            document.querySelector('head').removeChild(stylesheets[ssnum]);
+            document.querySelector('head').removeChild(stylesheets[ssNum]);
         }
         else if (stylesheets.length > ssNum && selectedTheme !== "Basic White") {
             stylesheets[ssNum].setAttribute('href', themePath + selectedTheme + ".css");
