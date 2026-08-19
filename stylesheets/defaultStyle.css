@@ -1,0 +1,110 @@
+/* Layers stuff */
+.layersContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lowerLayer {
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+    height: 100%;
+}
+
+.upperLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.1s ease;
+    row-gap: 4px;
+}
+
+.upperLayer.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.upperLayerContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+#optionsClose {
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+/* Normal stuff */
+.icon {
+    aspect-ratio: 1/1;
+    height: 32px;
+    border: 3px solid black;
+    image-rendering: pixelated;
+}
+
+.now-playing {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.5%;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    height: 50px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.formalHardwareContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    height: 50px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.playlistContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    height: 50px;
+    align-items: center;
+    font-size: 13px;
+}
+
+#status {
+    font-family: monospace;
+}
+
+.thumbnail {
+    border: 5px solid black;
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+

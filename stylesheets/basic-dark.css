@@ -1,0 +1,28 @@
+* {
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+
+.upperLayer {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.upperLayer button {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+#status {
+    color: rgb(180, 180, 180);
+}
+
+.thumbnailContainer {
+    background-color: rgba(51, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+}

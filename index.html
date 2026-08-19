@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/defaultStyle.css">
+</head>
+
+<body>
+    <div class="layersContainer">
+        <!-- Layer 0 - main content -->
+        <section>
+            <button id="options">Options</button>
+        </section>
+        <main class="lowerLayer now-playing">
+            <div class="thumbnailContainer">
+                <img id="thumbnail" class="thumbnail" src="">
+            </div>
+            <section class="track-info">
+                <h1 id="song">Connecting...</h1>
+                <div class="gameContainer">
+                    <img id="gameIcon" class="icon" src="">
+                    <p id="game"></p>
+                </div>
+                
+                <div class="formalHardwareContainer">
+                    <img id="hwIcon" class="icon" src="">
+                    <p id="hardware">Nothing</p>
+                </div>
+                <div class="playlistContainer">
+                    <img id="playlistIcon" class="icon" src="">
+                    <p id="playlist"></p>
+                </div>
+                
+                <p id="status">Connecting to Nintendo Music RPC...</p>
+            </section>
+        </main>
+        
+
+        <!-- Layer 1 - options on z-axis layer 1 -->
+        <aside id="layer1" class="upperLayer hide">
+            <div class="upperLayerContent">
+                <div id="themeselect"></div>
+                <button id="optionsClose" style="font-size: 20px; font-weight:bold;">X</button>
+            </div>
+        </aside>
+
+    </div>
+    
+    
+    <script src="./script.js" defer></script>
+
+</body>
+</html>
