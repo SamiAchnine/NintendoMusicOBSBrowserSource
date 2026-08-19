@@ -52,6 +52,9 @@ should be limited to general layout, etc.
 
 #options {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
 }
 
 /* Normal stuff */

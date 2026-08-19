@@ -16,7 +16,6 @@ body {
 
 .icon { 
     border: 3px solid black;
-    image-rendering: pixelated;
 }
 
 .thumbnail {
@@ -25,9 +24,8 @@ body {
 
 #options {
     color: black;
-    background-color: rgb(240, 240, 240);
     border-radius: 20px;
-    border: 1px solid rgb(70, 70, 70);
+    border: none;
 }
 
 #themeselect {
@@ -87,13 +85,9 @@ label {
     font-family: sans-serif;
 }
 
-.track-info {
-    font-family: "Fredoka", sans-serif;
-}
 
 #song {
-    font-weight: 600;
-    font-size: 2.65em;
+    font: 30px "Inter", "Segoe UI", sans-serif;
 }
 
 #game {
