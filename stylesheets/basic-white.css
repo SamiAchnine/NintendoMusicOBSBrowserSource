@@ -1,8 +1,111 @@
 * {
-    font-family: Verdana, sans-serif;
     color: black;
 }
 
 body {
     background-color: rgb(240, 240, 240);
+}
+
+.upperLayer {
+    background-color: rgba(240, 240, 240, 0.65);
+}
+
+#optionsClose {
+    border: 2px solid black;
+}
+
+.icon { 
+    border: 3px solid black;
+    image-rendering: pixelated;
+}
+
+.thumbnail {
+    border: 5px solid black;
+}
+
+#options {
+    color: black;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+#themeselect {
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    position: relative;
+    padding: 15px
+}
+
+#themeselect::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: linear-gradient(0deg, rgb(170,170,170), rgb(220, 220,220)) border-box;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+fieldset {
+    border: none;
+    padding: 5px;
+}
+
+legend {
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 25px;
+    position: relative;
+    background-color: rgb(180, 180, 180);
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+}
+
+legend::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(0deg, rgb(20, 20, 20), rgb(120,120,120)) border-box;
+    mask: 
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+input {
+    margin: 0.3rem;
+}
+
+label {
+    margin: 0.3rem;
+    margin-left: 0;
+}
+
+.track-info {
+    font-family: "Fredoka", sans-serif;
+}
+
+#song {
+    font-weight: 600;
+    font-size: 2.65em;
+}
+
+#game {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
+}
+
+#hardware {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
+}
+
+#playlist {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
 }
