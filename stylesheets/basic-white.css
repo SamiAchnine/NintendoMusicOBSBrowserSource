@@ -11,7 +11,7 @@ body {
 }
 
 #optionsClose {
-    border: 2px solid black;
+    border: 2px solid rgb(40,40,40);
 }
 
 .icon { 
@@ -91,4 +91,8 @@ label {
 #playlist {
     font-family: "Rubik", sans-serif;
     margin-left: 5px;
+}
+
+#status {
+    color: rgb(150, 150, 150);
 }

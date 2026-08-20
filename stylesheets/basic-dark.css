@@ -1,5 +1,4 @@
 * {
-    font-family: Verdana, sans-serif;
     color: white;
 }
 
@@ -8,27 +7,94 @@ body {
 }
 
 .upperLayer {
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-.upperLayer button {
-    background-color: rgb(240, 240, 240);
-    color: black;
-}
-
-#status {
-    color: rgb(180, 180, 180);
-}
-
-#options {
-    color: black;
-    background-color: rgb(240, 240, 240);
-    border-radius: 20px;
-    border: 1px solid rgb(70, 70, 70);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 #optionsClose {
-    color: black;
     background-color: rgb(240, 240, 240);
-    border: 2px solid rgb(70, 70, 70);
+    border: 2px solid rgb(60, 60, 60);
+    color: black;
+}
+
+.icon { 
+    border: 3px solid black;
+}
+
+.thumbnail {
+    border: 5px solid black;
+}
+
+#options {
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+}
+
+#themeselect {
+    background-color: rgb(40, 40, 40);
+    border-radius: 8px;
+    position: relative;
+    padding: 15px;
+    border: 3px solid rgb(115, 115, 115);
+}
+
+fieldset {
+    border: none;
+    padding: 5px;
+}
+
+legend {
+    padding: 4px 0;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+legend::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: linear-gradient(0deg, rgb(50, 50, 50), rgb(70,70,70)) border-box;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+input {
+    margin: 0.3rem;
+}
+
+label {
+    margin: 0.3rem;
+    margin-left: 0;
+    font-family: sans-serif;
+}
+
+
+#song {
+    font: 30px "Inter", "Segoe UI", sans-serif;
+}
+
+#game {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
+}
+
+#hardware {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
+}
+
+#playlist {
+    font-family: "Rubik", sans-serif;
+    margin-left: 5px;
+}
+
+#status {
+    color: rgb(100, 100, 100);
 }
