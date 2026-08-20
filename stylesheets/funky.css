@@ -1,0 +1,100 @@
+* {
+    color: black;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.upperLayer {
+    background-color: #ffff00a0;
+}
+
+#optionsClose {
+    border: 2px solid white;
+    background-color: red;
+    color: blue;
+}
+
+.icon { 
+    border: 3px solid purple;
+}
+
+.thumbnail {
+    border: 5px solid pink;
+}
+
+#options {
+    color: black;
+    border-radius: 20px;
+    border: none;
+}
+
+#themeselect {
+    background-color: darkcyan;
+    border-radius: 8px;
+    position: relative;
+    padding: 15px;
+    border: 3px solid darkolivegreen;
+}
+
+fieldset {
+    border: none;
+    padding: 5px;
+}
+
+legend {
+    padding: 4px 0;
+    border-radius: 10px;
+    position: relative;
+    background-color: gainsboro;
+    width: 100%;
+    text-align: center;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+legend::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 3px;
+    background: linear-gradient(0deg, chocolate, moccasin) border-box;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+input {
+    margin: 0.3rem;
+}
+
+label {
+    margin: 0.3rem;
+    margin-left: 0;
+    font-family: sans-serif;
+}
+
+
+#song {
+    font: 700 30px "Papyrus", "Segoe UI", sans-serif;
+}
+
+#game {
+    font-family: "Comic Sans MS", cursive;
+    margin-left: 5px;
+}
+
+#hardware {
+    font-family: "Comic Sans MS", cursive;
+    margin-left: 5px;
+}
+
+#playlist {
+    font-family: "Comic Sans MS", cursive;
+    margin-left: 5px;
+}
+
+#status {
+    color: lightcyan;
+}
