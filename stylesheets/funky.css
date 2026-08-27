@@ -1,27 +1,28 @@
 * {
-    color: black;
+    color: rgb(40,40,40);
 }
 
 body {
-    background-color: aquamarine;
+    background-color: rgb(0, 233, 221);    
 }
 
 .upperLayer {
-    background-color: #ffff00a0;
+    background-color: rgba(127, 255, 212, 0.5);
 }
 
 #optionsClose {
-    border: 2px solid white;
-    background-color: red;
-    color: blue;
+    border: 2px solid gray;
+    background-color: white;
+    color: red;
 }
 
 .icon { 
-    border: 3px solid purple;
+    border: 3px solid;
+    border-image: linear-gradient(0deg, purple, rgb(230, 0, 230)) 1;
 }
 
 .thumbnail {
-    border: 5px solid pink;
+    border: 5px solid purple;
 }
 
 #options {
@@ -76,23 +77,34 @@ label {
 }
 
 
+.track-info div {
+    font-family: "Jockey One", monospace;
+}
+
+/* In service of the rotating gradient color animation thing */
+
+@property --gradient-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
 #song {
-    font: 700 30px "Papyrus", "Segoe UI", sans-serif;
+    background: linear-gradient(var(--gradient-angle), rgb(40,40,40), rgb(230, 0, 230));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    animation: rotateGradient 20s linear infinite;
+
+    font-family: "Audiowide", sans-serif;
 }
 
-#game {
-    font-family: "Comic Sans MS", cursive;
-    margin-left: 5px;
-}
-
-#hardware {
-    font-family: "Comic Sans MS", cursive;
-    margin-left: 5px;
-}
-
-#playlist {
-    font-family: "Comic Sans MS", cursive;
-    margin-left: 5px;
+@keyframes rotateGradient {
+    0% { --gradient-angle: 0deg; } 
+    100% { --gradient-angle: 360deg; }
 }
 
 #status {

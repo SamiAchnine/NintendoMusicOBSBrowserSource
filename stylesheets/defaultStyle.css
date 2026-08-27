@@ -78,31 +78,13 @@ should be limited to general layout, etc.
     row-gap: 10px;
 }
 
-.gameContainer {
+.track-info div {
     display: flex;
     flex-direction: row;
     column-gap: 3px;
-    height: 50px;
+    height: 60px;
     align-items: center;
-    font-size: 16px;
-}
-
-.formalHardwareContainer {
-    display: flex;
-    flex-direction: row;
-    column-gap: 3px;
-    height: 50px;
-    align-items: center;
-    font-size: 16px;
-}
-
-.playlistContainer {
-    display: flex;
-    flex-direction: row;
-    column-gap: 3px;
-    height: 50px;
-    align-items: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #status {
