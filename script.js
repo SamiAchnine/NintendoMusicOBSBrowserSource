@@ -10,8 +10,9 @@ optionsCloseButton.addEventListener("click", () => {
     layer1.classList.toggle("hide");
 });
 
-// themeslop taken from https://explainers.dev/css-theme-switcher/
 
+
+// themeslop taken from https://explainers.dev/css-theme-switcher/
 
 // creates fieldset where the radio buttons go
 if (document.querySelector("#themeselect")) {
@@ -21,7 +22,14 @@ if (document.querySelector("#themeselect")) {
     const ssNum = document.querySelectorAll("link[rel='stylesheet']").length;
     const theme = localStorage.getItem('userTheme');
 
-    if (theme !== null && theme !== 'basic-white') createLink(theme);
+    if (theme !== null) {
+        createLink(theme);
+    }
+    else {
+        // forcefully sets theme to basic-white when localStorage is null (first time visit)
+        localStorage.setItem("userTheme", "basic-white");
+        createLink(localStorage.getItem('userTheme'));
+    }
 
     const fieldset = document.createElement('fieldset');
     const legend = document.createElement("legend");
@@ -61,6 +69,7 @@ if (document.querySelector("#themeselect")) {
     fieldset.addEventListener("change", (event) => {
         let selectedTheme = event.target.value;
         let stylesheets = document.querySelectorAll("link[rel='stylesheet']");
+        localStorage.setItem('userTheme', selectedTheme);
         if (stylesheets.length > ssNum && selectedTheme === "Basic White"){
             document.querySelector('head').removeChild(stylesheets[ssNum]);
         }
@@ -69,7 +78,6 @@ if (document.querySelector("#themeselect")) {
         }
         else {
             createLink(selectedTheme);
-            localStorage.setItem('userTheme', selectedTheme);
         }
     });
 
@@ -138,6 +146,7 @@ function updateTrack(track) {
         document.getElementById("gameIcon").removeAttribute("src");
     }
 
+    // playlist thumbnail, the websocket reports the favorites playlist as 'star', so it uses that resource if found
     if (playlist.playlistImageURL == "star") {
         document.getElementById("playlistIcon").classList.remove("hidden");
         document.getElementById("playlistIcon").src = "./hwIcons/star.png";
