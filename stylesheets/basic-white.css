@@ -75,7 +75,7 @@ label {
 
 
 #song {
-    font: 30px "Inter", "Segoe UI", sans-serif;
+    font-family: "Inter", "Segoe UI", sans-serif;
 }
 
 #game {
